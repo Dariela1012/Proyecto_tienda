@@ -20,4 +20,6 @@ Día 4: Se agregaron clases bases del proyecto (controladores y modelos)
 Día 5: Se agregaron clases y código java
 Día 6: Se agregó service y css en la carpeta resourses
 Día 7: Creación del README.md.
+Día 8: Se agregó codigo en controller, model services y css.
+
 
