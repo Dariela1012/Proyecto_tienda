@@ -22,5 +22,6 @@ Día 6: Se agregó service y css en la carpeta resourses
 Día 7: Creación del README.md.
 Día 8: Se agregó codigo en controller, model services y css. 
 Día 8: Actaulización de README.
+Funcionalidad: Rama feature/catalogo creada para el catálogo de productos (prueba).
 
 
