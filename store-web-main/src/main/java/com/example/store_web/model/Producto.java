@@ -40,4 +40,12 @@ public class Producto {
         return idProducto;
     }
 
+    public void setIdProducto(Integer idproducto){
+        this.idProducto = idProducto;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
 }
