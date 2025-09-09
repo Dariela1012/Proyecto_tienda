@@ -26,5 +26,18 @@ public class Producto {
     @Column(name = "talla", length = 10)
     private String talla;
 
+    @Column(name = "genero", nullable = false, length = 10)
+    private String genero;
+
+    @Column(name = "edad_sugerida", length = 20)
+    private String edadSugerida;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria")
+    private Categoria categoria;
+
+    public Integer getIdproducto(){
+        return idProducto;
+    }
 
 }
