@@ -11,5 +11,11 @@ public class Contacto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_contacto")
     private Integer idContacto;
+
+    @Column(name = "nombre", nullable = false, length = 100)
+    private String nombre;
+
+    @Column(name = "apellido", nullable = false, length = 100)
+    private String apellido;
     
 }
