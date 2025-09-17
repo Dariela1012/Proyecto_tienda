@@ -18,12 +18,19 @@ public class Contacto {
     @Column(name = "apellido", nullable = false, length = 100)
     private String apellido;
 
-    @Column(name = "numero", nullable =false, length =20)
+    @Column(name = "numero", nullable = false, length = 20)
     private String numero;
     
-    @Column(name = "correo", nullable =false, length =100)
+    @Column(name = "correo", nullable = false, length = 100)
     private String correo;
 
+    @Column(name = "mensaje", nullable = false, columnDefinition = "TEXT")
+    private String mensaje;
 
-    
+    @Column(name = "fecha_envio", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    private LocalDateTime fechaEnvio;
+
+    public Integer getIdContacti(){
+        return idContacto;
+    }
 }
