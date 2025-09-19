@@ -33,4 +33,16 @@ public class Contacto {
     public Integer getIdContacti(){
         return idContacto;
     }
+
+    public void setIdeContacto(Integer idContacto){
+        this.idContacto = idContacto;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
 }
