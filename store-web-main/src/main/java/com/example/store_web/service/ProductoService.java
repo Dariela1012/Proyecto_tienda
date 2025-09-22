@@ -20,5 +20,23 @@ public class ProductoService {
     public void guardar(Producto producto){
         entityManager.persist(producto);
     }
+
+    @Transactional
+    public String actualizar(Producto productoNuevo, int id){
+        String message = "mensaje";
+        Producto producto = entityManager.find(Producto.class, id);
+        producto.setNombre(productoNuevo.getNombre());
+        producto.setDescripcion(ProductoNuevo.getDescripcion());
+        Producto.setPrecio(productoNuevo.getPrecio());
+        producto.setImagenUrl(productoNuevo.getImagenUrl());
+        producto.setTalla(productoNuevo.getTalla());
+        producto.setGenero(productoNuevo.getGenero());
+        producto.setEdadSugerida(productoNuevo.getEdadSugerida());
+        producto.setCategoria(productoNuevo.getCategoria());
+        entityManager.marge(producto);
+
+        message = "¡Producto actualizado correctamente!";
+        return message;
+    }
     
 }
