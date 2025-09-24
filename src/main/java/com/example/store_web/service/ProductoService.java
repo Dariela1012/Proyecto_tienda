@@ -38,5 +38,13 @@ public class ProductoService {
         message = "¡Producto actualizado correctamente!";
         return message;
     }
+
+    @Transactional 
+    public void eliminar(Integer id) {
+        Producto producto = entityManager.find(Producto.class, id);
+        if (producto != null){
+            entityManager.remove(producto);
+        }
+    }
     
 }
